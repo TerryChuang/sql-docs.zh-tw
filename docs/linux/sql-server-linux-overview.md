@@ -19,11 +19,11 @@ ms.lasthandoff: 10/05/2017
 ---
 # <a name="sql-server-on-linux"></a>Linux 上的 SQL Server
 
-SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資料庫引擎，有許多類似的功能與服務，不論您的作業系統。
+SQL Server 2017 現在可以在 Linux 上執行。 它和您的作業系統有相同的 SQL Server 資料庫引擎與許多類似的功能與服務。
 
 ## <a name="install"></a>Install
 
-若要開始，請使用下列快速入門教學課程之一 Linux 上安裝 SQL Server:
+若要開始，請使用下列快速入門教學課程之一 在 Linux 上安裝 SQL Server:
 
 - [Red Hat Enterprise Linux 上安裝](quickstart-install-connect-red-hat.md)
 - [SUSE Linux Enterprise Server 上安裝](quickstart-install-connect-suse.md)
@@ -32,7 +32,7 @@ SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資�
 - [在 Azure 中佈建 SQL VM](/azure/virtual-machines/linux/sql/provision-sql-server-linux-virtual-machine?toc=%2fsql%2flinux%2ftoc.json)
 
 > [!NOTE]
-> Docker 本身會執行多個平台上，這表示您可以在 Linux、 Mac 和 Windows 上執行的 Docker 映像。
+> Docker 可以在多個平台上執行，這表示您可以在 Linux、 Mac 和 Windows 上執行的 Docker 映像。
 
 ## <a name="connect"></a>Connect
 
@@ -46,9 +46,9 @@ SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資�
 
 ## <a name="explore"></a>瀏覽
 
-SQL Server 2017 所有支援的平台，包括 Linux 上有相同的基礎資料庫引擎。 許多現有的特色與功能運作的 Linux 上的方式相同。 文件集的這個區域會顯示其中部分功能以 Linux 的觀點。 它也會呼叫具有獨特需求，在 Linux 上的區域。
+SQL Server 2017 在所有支援的平台有相同的資料庫引擎，包括 Linux。 許多現有的特色與功能在 Linux 上運作方式都相同。 文件集的區域會顯示其中部分以 Linux 觀點的功能。 它也會呼叫在 Linux 區域所具有的獨特需求，。
 
-如果您已經熟悉 SQL Server，請檢閱[版本資訊](sql-server-linux-release-notes.md)的一般指導方針和此版本的已知的問題。 然後查看[的新功能 SQL Server on Linux](sql-server-linux-whats-new.md)以及[的新功能 SQL Server 2017 整體](../sql-server/what-s-new-in-sql-server-2017.md)。
+如果您已經熟悉 SQL Server，請檢閱[版本資訊](sql-server-linux-release-notes.md)的一般指導方針和此版本的已知問題。 然後查看[的新功能 SQL Server on Linux](sql-server-linux-whats-new.md)以及[新功能 SQL Server 2017 概觀](../sql-server/what-s-new-in-sql-server-2017.md)。
 
 ##  <a name="infotipmediageneralinfotippng-engage-with-the-sql-server-engineering-team"></a>![info_tip](./media/general/info_tip.png) 與 SQL Server 工程團隊交流
 
