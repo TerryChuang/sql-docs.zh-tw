@@ -18,7 +18,7 @@ ms.lasthandoff: 10/18/2017
 ---
 # <a name="release-notes-for-sql-server-2017-on-linux"></a>在 Linux 上的 SQL Server 2017 的版本資訊
 
-下列版本資訊適用於 SQL Server 2017 在 Linux 上執行。 這個版本支援 SQL Server database engine 功能的許多 for Linux。 下列主題會分成區段，每個版本中，從最新的一般上市 (GA) 版本和先前的兩個版本。 請參閱每個支援的平台、 工具、 功能和已知的問題的章節中的資訊。
+下列版本資訊適用於在 Linux 執行 SQL Server 2017。 這個版本支援 SQL Server 資料庫引擎針對 Linux 所提供的功能。 下列主題會分成區段，每個版本中，從最新的一般上市 (GA) 版本和先前的兩個版本。 請參閱每個支援的平台、 工具、 功能和已知的問題的章節中的資訊。
 
 下表列出 SQL Server 2017 的發行記錄。
 
@@ -75,7 +75,7 @@ ms.lasthandoff: 10/18/2017
 
 ### <a name="Unsupported"></a>不支援的功能和服務
 
-下列功能和服務並不適用於 Linux 這一次。 這些功能的支援會逐漸啟用期間每月更新的頻率，預覽計畫。
+下列功能和服務並不適用於這一次在 Linux 執行 SQL Server。 這些功能的支援會逐漸啟用期間每月更新的頻率，預覽計畫。
 
 | 區域 | 不支援的功能或服務 |
 |-----|-----|
@@ -108,7 +108,7 @@ ms.lasthandoff: 10/18/2017
 
 ### <a name="known-issues"></a>已知問題
 
-下列章節說明在 Linux 上的一般上市 （GA) 版本的 SQL Server 2017 的已知的問題。
+下列章節說明在 Linux 上的一般上市 （GA) 版本的 SQL Server 2017 的已知問題。
 
 #### <a name="general"></a>一般
 
@@ -160,7 +160,7 @@ ms.lasthandoff: 10/18/2017
       sudo systemctl restart mssql-server
       ```
 
-- 在 Linux 上的 SQL Server 2017，無法還原使用記憶體內部 OLTP 的 Windows 上的 SQL Server 2014 資料庫。 若要還原使用記憶體內部 OLTP 的 SQL Server 2014 資料庫，先將資料庫升級到 SQL Server 2016 或 Windows 上的 SQL Server 2017 之前將其移至 SQL Server on Linux 透過備份/還原或卸離/附加。
+- 在 Linux 上的 SQL Server 2017，無法還原使用記憶體內部 OLTP 的 Windows 上的 SQL Server 2014 資料庫。 若要還原使用記憶體最佳化 OLTP 的 SQL Server 2014 資料庫，先將資料庫升級到 SQL Server 2016 或 Windows 上的 SQL Server 2017 之前，透過備份/還原或卸離/附加將其移至 SQL Server on Linux 。
 
 - 使用者的權限**ADMINISTER BULK OPERATIONS**此時不支援在 Linux 上。
 
