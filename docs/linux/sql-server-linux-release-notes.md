@@ -180,9 +180,9 @@ ms.lasthandoff: 10/18/2017
 
 若要解決此問題，請執行下列其中一項：
 
-1. 若要指定 TCP 連線的目標，而不是主機名稱使用 Ip。
+1. 使用IP而非使用主機名稱作為 TCP 連線的目標。
 
-1. 藉由移除啟用 ipv6 環境中，核心`ipv6.disable=1`從開機 cmdline。 若要這樣做的方式取決於 Linux 散發套件和開機載入器，例如幼蟲。 如果您想要停用 IPv6，您仍可停用它藉由設定`net.ipv6.conf.all.disable_ipv6 = 1`中`sysctl`組態 (例如`/etc/sysctl.conf`)。 這仍會避免系統的網路介面卡 IPv6 位址，但是允許 sqlservr 功能運作。
+1. 在啟用 ipv6 核心環境，從開機命令列移除核心`ipv6.disable=1`。 若要這樣做的方式取決於 Linux 散發套件和開機載入器，例如 grub。 如果您想要停用 IPv6，您仍可停用它藉由設定`net.ipv6.conf.all.disable_ipv6 = 1`中`sysctl`組態 (例如`/etc/sysctl.conf`)。 這將會避免系統的網路介面卡 IPv6 位址，但是允許 sqlservr 功能運作。
 
 #### <a name="network-file-system-nfs"></a>Network File System (NFS)
 如果您使用**網路檔案系統 (NFS)**遠端共用實際執行環境，請注意下列的支援需求：
