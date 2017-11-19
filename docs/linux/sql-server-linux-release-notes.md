@@ -176,7 +176,7 @@ ms.lasthandoff: 10/18/2017
    - Proc/sys/網路/ipv6/目錄必須存在。
    - C 程式中呼叫`socket(AF_INET6, SOCK_STREAM, IPPROTO_IP)`應該會成功-syscall 必須傳回 fd ！ =-1，而且不會因 EAFNOSUPPORT。
 
-確切的錯誤而定的功能。 連結的伺服器，這表示做為登入逾時錯誤。 可用性群組，`ALTER AVAILABILITY GROUP JOIN`因下載設定逾時錯誤的 5 分鐘之後將會失敗的次要複本上的 DDL。
+確切的功能錯誤。 對於連結的伺服器而言，如登入逾時錯誤。 可用性群組，`ALTER AVAILABILITY GROUP JOIN` DDL 因下載設定逾時錯誤， 5 分鐘之後次要複本將會失敗。
 
 若要解決此問題，請執行下列其中一項：
 
