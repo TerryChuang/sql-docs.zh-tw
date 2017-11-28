@@ -21,11 +21,11 @@ ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/20/2017
 ---
-# <a name="sql-server-on-linux"></a>Linux 上的 SQL Server
+# <a name="sql-server-on-linux"></a>在 Linux 上執行 SQL Server
 
 SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資料庫引擎，有許多類似的功能與服務，不論您的作業系統。
 
-## <a name="install"></a>Install
+## <a name="install"></a>安裝
 
 若要開始，請使用下列快速入門教學課程之一 Linux 上安裝 SQL Server:
 
@@ -38,7 +38,7 @@ SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資�
 > [!NOTE]
 > Docker 本身會執行多個平台上，這表示您可以在 Linux、 Mac 和 Windows 上執行的 Docker 映像。
 
-## <a name="connect"></a>Connect
+## <a name="connect"></a>連接
 
 安裝之後，連接到 Linux 機器上的 SQL Server 執行個體。 您可以連接本機或遠端和使用各種工具和驅動程式。 快速入門教學課程會示範如何使用[sqlcmd](sql-server-linux-setup-tools.md)命令列工具。 其他工具包括下列各項：
 
