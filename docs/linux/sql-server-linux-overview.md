@@ -23,16 +23,16 @@ ms.lasthandoff: 12/01/2017
 ---
 # <a name="sql-server-on-linux"></a>Linux 上的 SQL Server
 
-SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資料庫引擎，有許多類似的功能與服務，不論您的作業系統。
+SQL Server 2017 現在可以在 Linux 上執行。 它是相同的 SQL Server 資料庫引擎，有許多類似的功能與服務，不論您的作業系統。
 
 ## <a name="install"></a>Install
 
 若要開始，請使用下列快速入門教學課程之一 Linux 上安裝 SQL Server:
 
-- [Red Hat Enterprise Linux 上安裝](quickstart-install-connect-red-hat.md)
-- [SUSE Linux Enterprise Server 上安裝](quickstart-install-connect-suse.md)
+- [在 Red Hat Enterprise Linux 上安裝](quickstart-install-connect-red-hat.md)
+- [在 SUSE Linux Enterprise Server 上安裝](quickstart-install-connect-suse.md)
 - [在 Ubuntu 上安裝](quickstart-install-connect-ubuntu.md)
-- [執行 docker](quickstart-install-connect-docker.md)
+- [執行 docker 上執行](quickstart-install-connect-docker.md)
 - [在 Azure 中佈建 SQL VM](/azure/virtual-machines/linux/sql/provision-sql-server-linux-virtual-machine?toc=%2fsql%2flinux%2ftoc.json)
 
 > [!NOTE]
@@ -50,14 +50,14 @@ SQL Server 2017 現在會在 Linux 上執行。 它是相同的 SQL Server 資�
 
 ## <a name="explore"></a>瀏覽
 
-SQL Server 2017 所有支援的平台，包括 Linux 上有相同的基礎資料庫引擎。 許多現有的特色與功能運作的 Linux 上的方式相同。 文件集的這個區域會顯示其中部分功能以 Linux 的觀點。 它也會呼叫具有獨特需求，在 Linux 上的區域。
+SQL Server 2017 所有支援的平台，包括 Linux 上有相同的基礎資料庫引擎。 許多現有的特色與功能運作的 Linux 上的方式相同。 文件集區域會顯示部分以 Linux 觀點的功能。 它也會呼叫在 Linux 上的區域所具有獨特需求。
 
-如果您已經熟悉 SQL Server，請檢閱[版本資訊](sql-server-linux-release-notes.md)的一般指導方針和此版本的已知的問題。 然後查看[的新功能 SQL Server on Linux](sql-server-linux-whats-new.md)以及[的新功能 SQL Server 2017 整體](../sql-server/what-s-new-in-sql-server-2017.md)。
+如果您已經熟悉 SQL Server，請檢閱[版本資訊](sql-server-linux-release-notes.md)的一般指導方針和此版本的已知的問題。 然後查看[SQL Server 在 Linux 上的新功能](sql-server-linux-whats-new.md)以及[SQL Server 2017 新功能概觀](../sql-server/what-s-new-in-sql-server-2017.md)。
 
 ##  <a name="infotipmediageneralinfotippng-engage-with-the-sql-server-engineering-team"></a>![info_tip](./media/general/info_tip.png) 與 SQL Server 工程團隊交流
 
-- [DBA 堆疊 Exchange](https://dba.stackexchange.com/questions/tagged/sql-server)： 提問資料庫管理
-- [堆疊溢位](http://stackoverflow.com/questions/tagged/sql-server)： 開發提問
+- [DBA 堆疊 Exchange](https://dba.stackexchange.com/questions/tagged/sql-server)： 詢問資料庫管理的問題
+- [堆疊溢位](http://stackoverflow.com/questions/tagged/sql-server)： 詢問開發的問題
 - [MSDN 論壇](https://social.msdn.microsoft.com/Forums/en-US/home?category=sqlserver)： 詢問技術問題
-- [Microsoft Connect](https://connect.microsoft.com/SQLServer/Feedback)： 報告錯誤和要求的功能
+- [Microsoft Connect](https://connect.microsoft.com/SQLServer/Feedback)： 報告錯誤和要求功能
 - [Reddit](https://www.reddit.com/r/SQLServer/)： 討論 SQL Server
