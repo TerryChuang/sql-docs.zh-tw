@@ -392,9 +392,9 @@ docker rm sql1
 
 <a name="TitleNum_7"/>
 
-### <a name="7-nbsp-installation-guidance-for-sql-server-on-linuxsql-server-linux-setupmd"></a>7.&nbsp;[SQL Server on Linux 的安裝指南](sql-server-linux-setup.md)
+### <a name="7-nbsp-installation-guidance-for-sql-server-on-linuxsql-server-linux-setupmd"></a>7.&nbsp;[在 Linux 執行 SQL Server 的安裝指南](sql-server-linux-setup.md)
 
-*更新日期︰ 2017年-12-01* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_6) | [下一步](#TitleNum_8))
+*更新日期︰ 2017年-12-01* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([下一步](#TitleNum_6) | [下一步](#TitleNum_8))
 
 <!-- Source markdown line 125.  ms.author= jroth.  -->
 
@@ -405,26 +405,26 @@ docker rm sql1
 
 
 
-**<a id="repositories"></a>設定來源儲存機制**
+**<a id="repositories"></a>設定來源儲存庫**
 
 
-當您安裝或升級 SQL Server 時，您收到最新版本的 SQL Server 設定的 Microsoft 儲存機制。
+當您安裝或升級 SQL Server 時，您可以從所設定的 Microsoft 儲存庫收到最新版本的 SQL Server。
 
-**儲存機制選項**
-
-
-有兩種類型的每個散發的儲存機制：
-
-- **累計更新 (CU)**: 累計更新 (CU) 儲存機制自該版本包含基底的 SQL Server 版本和 bug 修正或改進的封裝。 累計更新的發行版本，例如 SQL Server 2017 特有。 它們會以一般的步調發行。
-
-- **GDR**: GDR 儲存機制 含有該發行以來的基底的 SQL Server 版本和僅重大修正程式和安全性更新的封裝。 這些更新也會新增到下一個 CU 版本。
-
-每個 CU 和 GDR 版本包含完整的 SQL Server 封裝和所有先前的更新，該儲存機制。 從 GDR 發行更新至目前的版本支援適用於 SQL Server 變更設定的儲存機制。 您也可以 [降級-#rollback） 至您的主要版本內任何發佈 (例如： 2017年)。 更新不支援從 CU GDR 發行的版本。
-
-**請檢查設定的儲存機制**
+**儲存庫選項**
 
 
-如果您想要確認哪些儲存機制已設定，請使用下列平台相關技術。
+每個散發有兩種類型儲存機制：
+
+- **累積更新 (CU)**: 累積更新 (CU) 儲存庫自該版本包含基底的 SQL Server 版本和 bug 修正或改進的封裝。 累積更新的發行版本，例如 SQL Server 2017 特有。 它們會以一般的步調發行。
+
+- **GDR**: GDR 儲存庫含有該發行以來的基底的 SQL Server 版本和僅重大修正程式和安全性更新的封裝。 這些更新也會新增到下一個 CU 版本。
+
+每個 CU 和 GDR 版本的儲存庫包含完整的 SQL Server 封裝和所有先前的更新。 從 GDR 發行更新至目前的版本支援適用於 SQL Server 變更設定的儲存機制。 您也可以 [降級-#rollback） 至您的主要版本內任何發佈 (例如： 2017年)。 更新不支援從 CU GDR 發行的版本。
+
+**請檢查設定的儲存庫**
+
+
+如果您想要確認哪些儲存庫已設定，請使用下列平台相關技術。
 
 | 平台 | 程序 |
 |-----|-----|
