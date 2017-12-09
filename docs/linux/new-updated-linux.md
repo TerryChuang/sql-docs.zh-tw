@@ -284,9 +284,9 @@ docker rm sql1
 
 <a name="TitleNum_5"/>
 
-### <a name="5-nbsp-encrypting-connections-to-sql-server-on-linuxsql-server-linux-encrypted-connectionsmd"></a>5.&nbsp;[加密連接到 SQL Server on Linux](sql-server-linux-encrypted-connections.md)
+### <a name="5-nbsp-encrypting-connections-to-sql-server-on-linuxsql-server-linux-encrypted-connectionsmd"></a>5.&nbsp;[在 Linux 上執行 SQL Server 加密連線](sql-server-linux-encrypted-connections.md)
 
-*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_4) | [下一步](#TitleNum_6))
+*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([上一步](#TitleNum_4) | [下一步](#TitleNum_6))
 
 <!-- Source markdown line 45.  ms.author= meetb;rickbyh.  -->
 
@@ -313,15 +313,15 @@ docker rm sql1
 
 - **註冊用戶端電腦 （Windows、 Linux 或 macOS） 上的憑證**
 
-    -   如果您使用 CA 簽署的憑證，您必須將憑證授權單位 (CA) 憑證，而不是使用者憑證複製到用戶端電腦。
-    -   如果您只使用自我簽署的憑證將.pem 檔案複製到下列資料夾發佈到個別和執行命令，讓它們
+    -   如果您使用 CA 簽署的憑證，您必須複製至憑證授權單位 (CA) ，而不是將使用者憑證複製到用戶端電腦。
+    -   如果您只使用自我簽署的憑證，將.pem 檔案複製到下列資料夾，以個別發佈和執行它們。
 
-        - **Windows**:.pem 檔案，做為憑證以目前使用者]-> [匯入信任的根憑證授權單位]-> [憑證
-        - **macOS**:
+        - **Windows**:.pem 檔案，做為憑證以目前使用者]-> [匯入信任的根憑證授權單位]-> [憑證]
+        - **macOS**:
 
 -   **範例連接字串**
 
-    - **..!裡 NotShown-s-md.../includes/ssmanstudiofull-md.md)]** ！ [SSMS 連接 dialog--media/sql-server-linux-encrypted-connections/ssms-encrypt-connection.png"SSMS 連接對話方塊 」）
+    - **..!INCLUDE-NotShown-s-md.../includes/ssmanstudiofull-md.md)]** ！ [SSMS connection dialog--media/sql-server-linux-encrypted-connections/ssms-encrypt-connection.png"SSMS connection dialog" 」）
 
 
 
