@@ -129,7 +129,7 @@ docker rm sql1
 ```
 
 > [!WARNING]
-> 停止並移除容器，永久刪除容器中的任何 SQL Server 資料。 如果您要保留您的資料，[建立和複製備份的檔案超出 container--tutorial-restore-backup-in-sql-server-container.md） 或使用 [容器資料持續性 technique--sql-server-linux-configure-docker.md#persist）。
+> 停止並移除容器，永久刪除容器中的任何 SQL Server 資料。 如果您要保留您的資料，[建立和將備份檔案從容器複製出來 container--tutorial-restore-backup-in-sql-server-container.md） 或使用 [容器資料持續性 technique--sql-server-linux-configure-docker.md#persist）。
 
 
 
@@ -142,9 +142,9 @@ docker rm sql1
 
 <a name="TitleNum_2"/>
 
-### <a name="2-nbsp-configure-always-on-availability-group-for-sql-server-on-linuxsql-server-linux-availability-group-configure-hamd"></a>2.&nbsp;[設定 Alwayson 可用性群組的 SQL Server on Linux](sql-server-linux-availability-group-configure-ha.md)
+### <a name="2-nbsp-configure-always-on-availability-group-for-sql-server-on-linuxsql-server-linux-availability-group-configure-hamd"></a>2.&nbsp;[在 Linux 執行 SQL Server 並設定 Alwayson 可用性群組](sql-server-linux-availability-group-configure-ha.md)
 
-*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_1) | [下一步](#TitleNum_3))
+*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([上一步](#TitleNum_1) | [下一步](#TitleNum_3))
 
 <!-- Source markdown line 129.  ms.author= mikeray.  -->
 
@@ -155,10 +155,10 @@ docker rm sql1
 
 
 
-- 具有兩個同步複本及設定複本建立可用性群組：
+- 建立並設定具有兩個同步複本的可用性群組：
 
    >[!IMPORTANT]
-   >此架構可讓任何版本的 SQL Server 以裝載第三個複本。 例如，第三個複本可以裝載於 SQL Server Enterprise Edition。 在 Enterprise 版本中，唯一有效的端點類型是`WITNESS`。
+   >此架構可讓任何版本的 SQL Server 裝載第三個複本。 例如，第三個複本可以裝載於 SQL Server Enterprise Edition。 在 Enterprise 版本中，唯一有效的端點類型是`WITNESS`。
 
 ```sql
    CREATE AVAILABILITY GROUP [ag1]
@@ -193,7 +193,7 @@ docker rm sql1
 
 <a name="TitleNum_3"/>
 
-### <a name="3-nbsp-high-availability-and-data-protection-for-availability-group-configurationssql-server-linux-availability-group-hamd"></a>3.&nbsp;[的可用性群組組態的高可用性與資料保護](sql-server-linux-availability-group-ha.md)
+### <a name="3-nbsp-high-availability-and-data-protection-for-availability-group-configurationssql-server-linux-availability-group-hamd"></a>3.&nbsp;[可用性群組組態的高可用性與資料保護](sql-server-linux-availability-group-ha.md)
 
 *更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_2) | [下一步](#TitleNum_4))
 
@@ -208,13 +208,13 @@ docker rm sql1
 
 預設值為`REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT`為 0。 下表描述可用性行為。
 
-| |高可用性 （& s) </br> 資料保護 | 資料保護
+| |高可用性 & 資料保護 | 資料保護
 |:---|---|---
 |`REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT=`|0 <sup>*</sup>|1
-|主要複本中斷 | 自動容錯移轉。 新的主要是 R / W | 自動容錯移轉。 新的主要不適用於使用者交易。
-|次要複本中斷 | 主要是 R/W，公開執行資料遺失 （如果主要失敗，且無法復原）。 如果主要沒有自動容錯移轉也會失敗。 | 主要不適用於使用者交易。 沒有任何容錯移轉至主要複本也會失敗。
-|組態的唯一複本中斷 | 主要是 R / W 如果主要沒有自動容錯移轉也會失敗。 | 主要是 R / W 如果主要沒有自動容錯移轉也會失敗。
-|同步的次要 + 組態只複本中斷| 主要不適用於使用者交易。 沒有自動容錯移轉。 | 主要不適用於使用者交易。 如果容錯移轉沒有任何複本主要也會失敗。
+|主要複本中斷 | 自動容錯移轉。 新的主要複本是 R / W | 自動容錯移轉。 新的主要複本不適用於使用者交易。
+|次要複本中斷 | 主要複本是 R/W，將造成資料遺失 （如果主要複本失敗，且無法復原）。 如果主要複本沒有自動容錯移轉也會失敗。 | 主要複本不適用於使用者交易。 沒有任何容錯移轉至主要複本也會失敗。
+|組態的唯一複本中斷 | 主要是 R / W 如果主要複本沒有自動容錯移轉也會失敗。 | 主要複本是 R / W 如果主要沒有自動容錯移轉也會失敗。
+|同步的次要複本 + 組態只複本中斷| 主要複本不適用於使用者交易。 沒有自動容錯移轉。 | 主要複本不適用於使用者交易。 如果容錯移轉沒有任何複本主要也會失敗。
 <sup>*</sup>預設值
 
 >[!NOTE]
