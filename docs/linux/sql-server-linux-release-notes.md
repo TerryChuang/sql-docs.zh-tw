@@ -1,6 +1,6 @@
----
-title: "在 Linux 上的 SQL Server 2017 的版本資訊 |Microsoft 文件"
-description: "本主題包含的版本資訊，並支援在 Linux 上執行的 SQL Server 2017 的功能。 版本資訊會包含最新的版次和數個先前發行的版本。"
+--
+title: "在 Linux 上執行 SQL Server 2017 的版本資訊 |Microsoft 文件"
+description: "本主題包含的版本資訊，並支援在 Linux 上執行 SQL Server 2017 的功能。 版本資訊會包含最新的版次和數個先前發行的版本。"
 author: rothja
 ms.author: jroth
 manager: jhubbard
@@ -23,7 +23,7 @@ ms.lasthandoff: 12/01/2017
 ---
 # <a name="release-notes-for-sql-server-2017-on-linux"></a>在 Linux 上的 SQL Server 2017 的版本資訊
 
-下列版本資訊適用於 SQL Server 2017 在 Linux 上執行。 下列主題會分成區段，每個版本。 GA 版本具有可支援性和詳細的已知問題所列。 每個累計更新 (CU) 發行版本有描述 CU 變更以及連結至 Linux 封裝會下載支援主題的連結。
+下列版本資訊適用於在 Linux 上執行 SQL Server 2017 。 下列主題會依照版本分成區段。 GA 版本具有可支援性和詳細的已知問題列表。 每個累計更新 (CU) 發行版本有描述 CU 變更以及在 Linux 下載封裝的連結。
 
 ## <a name="supported-platforms"></a>支援的平台
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 12/01/2017
 | Docker 引擎 1.8 + Windows、 Mac 或 Linux 上 | 不適用 | [安裝指南](quickstart-install-connect-docker.md) | 
 
 > [!TIP]
-> 檢閱[系統需求](sql-server-linux-setup.md#system)for SQL Server on Linux。
+> 檢閱在 Linux 上執行 SQL Server 的[系統需求](sql-server-linux-setup.md#system)。
 
 ## <a name="supported-client-tools"></a>支援的用戶端工具
 
@@ -57,12 +57,12 @@ ms.lasthandoff: 12/01/2017
 
 ## <a id="cuinstall"></a>如何安裝累計更新
 
-如果您已設定的累計更新儲存機制，您會收到 SQL Server 封裝的最新累積更新時執行的新安裝。 累計更新儲存機制是所有 SQL Server on Linux 的封裝安裝發行項的預設值。 如需儲存機制設定的詳細資訊，請參閱[來源儲存機制](sql-server-linux-setup.md#repositories)。
+如果您已設定的累計更新儲存機制，在您執行新安裝您會收到 SQL Server 封裝的最新累積更新。 累計更新儲存機制是所有在 Linux 上執行 SQL Server 套件安裝發行項的預設值。 如需儲存機制設定的詳細資訊，請參閱[來源儲存機制](sql-server-linux-setup.md#repositories)。
 
-如果您要更新現有的 SQL Server 封裝、 執行取得最新累計更新每個套件的適當更新命令。 每個套件的特定更新指示，請參閱下列的安裝指南：
+如果您要更新現有的 SQL Server 套件、 執行取得最新累計更新每個套件的適當更新命令。 每個套件的特定更新指示，請參閱下列的安裝指南：
 
-- [安裝 SQL Server 封裝](sql-server-linux-setup.md#upgrade)
-- [安裝全文檢索搜尋的套件](sql-server-linux-setup-full-text-search.md)
+- [安裝 SQL Server 套件](sql-server-linux-setup.md#upgrade)
+- [安裝全文檢索搜尋套件](sql-server-linux-setup-full-text-search.md)
 - [安裝 SQL Server 代理程式套件](sql-server-linux-setup-sql-agent.md)
 - [安裝 SQL Server Integration Services](sql-server-linux-setup-ssis.md)
 
@@ -70,9 +70,9 @@ ms.lasthandoff: 12/01/2017
 
 這是 SQL Server 2017 的累計更新 2 (CU2) 版本。 此版本的 SQL Server 引擎版本是 14.0.3008.27。 此版本中的改進與修正的相關資訊，請參閱[https://support.microsoft.com/help/4052574](https://support.microsoft.com/help/4052574)。
 
-### <a name="package-details"></a>封裝詳細資料
+### <a name="package-details"></a>套件詳細資料
 
-手動或離線的封裝安裝，您可以下載 RPM 和 Debian 封裝與下表中的資訊：
+手動或離線安裝套件，您可以下載 RPM 和 Debian 套件的資訊如下表：
 
 | 封裝 | 封裝版本 | 下載 |
 |-----|-----|-----|
@@ -84,9 +84,9 @@ ms.lasthandoff: 12/01/2017
 
 這是 SQL Server 2017 的累計更新 1 (CU1) 版本。 此版本的 SQL Server 引擎版本是 14.0.3006.16。 此版本中的改進與修正的相關資訊，請參閱[https://support.microsoft.com/help/4038634](https://support.microsoft.com/help/4038634)。
 
-### <a name="package-details"></a>封裝詳細資料
+### <a name="package-details"></a>套件詳細資料
 
-手動或離線的封裝安裝，您可以下載 RPM 和 Debian 封裝與下表中的資訊：
+手動或離線的封裝安裝，您可以下載 RPM 和 Debian 套件的資訊如下表：
 
 | 封裝 | 封裝版本 | 下載 |
 |-----|-----|-----|
@@ -98,11 +98,11 @@ ms.lasthandoff: 12/01/2017
 
 這是 SQL Server 2017 的通用版本上市 (GA) 版本。 此版本的 SQL Server 引擎版本是 14.0.1000.169。
 
-### <a name="package-details"></a>封裝詳細資料
+### <a name="package-details"></a>套件詳細資料
 
-下表中會列出套件詳細資料及針對 RPM 和 Debian 封裝的下載位置。 請注意，您不需要直接下載這些封裝，如果您使用下列的安裝指南中的步驟：
+下表中會列出套件詳細資料及針對 RPM 和 Debian 封裝的下載位置。 請注意，如果您使用下列安裝指南中的步驟，您不需要直接下載這些套件：
 
-- [安裝 SQL Server 封裝](sql-server-linux-setup.md)
+- [安裝 SQL Server 套件](sql-server-linux-setup.md)
 - [安裝全文檢索搜尋的套件](sql-server-linux-setup-full-text-search.md)
 - [安裝 SQL Server 代理程式套件](sql-server-linux-setup-sql-agent.md)
 - [安裝 SQL Server Integration Services](sql-server-linux-setup-ssis.md)
@@ -115,7 +115,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="Unsupported"></a>不支援的功能和服務
 
-下列功能和服務並不適用於 Linux 這一次。 經過一段時間會逐漸啟用這些功能的支援。
+下列功能和服務並不適用於這次 Linux 的版本。 經過一段時間會逐漸啟用這些功能的支援。
 
 | 區域 | 不支援的功能或服務 |
 |-----|-----|
@@ -148,7 +148,7 @@ ms.lasthandoff: 12/01/2017
 
 ### <a name="known-issues"></a>已知問題
 
-下列章節說明在 Linux 上的一般上市 （GA) 版本的 SQL Server 2017 的已知的問題。
+下列章節說明在 Linux 上的一般上市 （GA) 版本的 SQL Server 2017 的已知問題。
 
 #### <a name="general"></a>一般
 
@@ -200,7 +200,7 @@ ms.lasthandoff: 12/01/2017
       sudo systemctl restart mssql-server
       ```
 
-- 在 Linux 上的 SQL Server 2017，無法還原使用記憶體內部 OLTP 的 Windows 上的 SQL Server 2014 資料庫。 若要還原使用記憶體內部 OLTP 的 SQL Server 2014 資料庫，先將資料庫升級到 SQL Server 2016 或 Windows 上的 SQL Server 2017 之前將其移至 SQL Server on Linux 透過備份/還原或卸離/附加。
+- 在 Linux 上執行 SQL Server 2017，無法還原使用記憶體最佳化 OLTP 的 Windows 上的 SQL Server 2014 資料庫。 若要還原使用記憶體最佳化 OLTP 的 SQL Server 2014 資料庫，先將資料庫升級到 SQL Server 2016 或 Windows 上的 SQL Server 2017 之前將其移至 SQL Server on Linux 透過備份/還原或卸離/附加。
 
 - 使用者的權限**ADMINISTER BULK OPERATIONS**此時不支援在 Linux 上。
 
