@@ -193,9 +193,9 @@ docker rm sql1
 
 <a name="TitleNum_3"/>
 
-### <a name="3-nbsp-high-availability-and-data-protection-for-availability-group-configurationssql-server-linux-availability-group-hamd"></a>3.&nbsp;[的可用性群組組態的高可用性與資料保護](sql-server-linux-availability-group-ha.md)
+### <a name="3-nbsp-high-availability-and-data-protection-for-availability-group-configurationssql-server-linux-availability-group-hamd"></a>3.&nbsp;[設定可用性群組組態的高可用性與資料保護](sql-server-linux-availability-group-ha.md)
 
-*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_2) | [下一步](#TitleNum_4))
+*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([上一步](#TitleNum_2) | [下一步](#TitleNum_4))
 
 <!-- Source markdown line 106.  ms.author= "mikeray".  -->
 
@@ -208,13 +208,13 @@ docker rm sql1
 
 預設值為`REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT`為 0。 下表描述可用性行為。
 
-| |高可用性 （& s) </br> 資料保護 | 資料保護
+| |高可用性 & 資料保護 | 資料保護
 |:---|---|---
 |`REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT=`|0 <sup>*</sup>|1
-|主要複本中斷 | 自動容錯移轉。 新的主要是 R / W | 自動容錯移轉。 新的主要不適用於使用者交易。
-|次要複本中斷 | 主要是 R/W，公開執行資料遺失 （如果主要失敗，且無法復原）。 如果主要沒有自動容錯移轉也會失敗。 | 主要不適用於使用者交易。 沒有任何容錯移轉至主要複本也會失敗。
-|組態的唯一複本中斷 | 主要是 R / W 如果主要沒有自動容錯移轉也會失敗。 | 主要是 R / W 如果主要沒有自動容錯移轉也會失敗。
-|同步的次要 + 組態只複本中斷| 主要不適用於使用者交易。 沒有自動容錯移轉。 | 主要不適用於使用者交易。 如果容錯移轉沒有任何複本主要也會失敗。
+|主要複本中斷 | 自動容錯移轉。 新的主要是 R / W | 自動容錯移轉。 新的主要複本不適用於使用者交易。
+|次要複本中斷 | 主要複本是 R/W，可能造成資料遺失 （如果主要複本失敗，且無法復原）。 如果主要複本沒有自動容錯移轉也會失敗。 | 主要複本不適用於使用者交易。 沒有任何容錯移轉至主要複本也會失敗。
+|組態的唯一複本中斷 | 主要複本是 R / W 如果主要複本沒有自動容錯移轉也會失敗。 | 主要複本是 R / W 如果主要沒有自動容錯移轉也會失敗。
+|同步的次要 + 組態只複本中斷| 主要複本不適用於使用者交易。 沒有自動容錯移轉。 | 主要複本不適用於使用者交易。 如果容錯移轉沒有任何複本主要複本也會失敗。
 <sup>*</sup>預設值
 
 >[!NOTE]
@@ -225,8 +225,8 @@ docker rm sql1
 
 * 與組態的唯一複本可用性群組中的所有複本都必須都是 SQL Server 2017 CU 1 或更新版本。
 * 任何版本的 SQL Server 可以裝載設定唯一的複本，包括 SQL Server Express。
-* 可用性群組必須至少一個次要複本-除了主要複本。
-* 組態的唯一複本不會計入每個 SQL Server 執行個體的複本數目上限。 SQL Server standard edition 則允許多達三個複本，SQL Server Enterprise Edition 則允許最多 9。
+* 除了主要複本可用性群組必須至少一個次要複本。
+* 組態的唯一複本不會計入每個 SQL Server 執行個體的複本數目上限。 SQL Server 標準版允許多達 3 個複本，SQL Server 企業版允許最多 9 個複本。
 
 
 
