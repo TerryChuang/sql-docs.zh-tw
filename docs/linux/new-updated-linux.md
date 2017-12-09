@@ -442,9 +442,9 @@ docker rm sql1
 
 <a name="TitleNum_8"/>
 
-### <a name="8-nbsp-configure-failover-cluster-instance---sql-server-on-linux-rhelsql-server-linux-shared-disk-cluster-configuremd"></a>8.&nbsp;[設定容錯移轉叢集執行個體-SQL Server 上 Linux (RHEL)](sql-server-linux-shared-disk-cluster-configure.md)
+### <a name="8-nbsp-configure-failover-cluster-instance---sql-server-on-linux-rhelsql-server-linux-shared-disk-cluster-configuremd"></a>8.&nbsp;[在 Linux 設定 SQL Server 容錯移轉叢集執行個體 (RHEL)](sql-server-linux-shared-disk-cluster-configure.md)
 
-*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_7) | [下一步](#TitleNum_9))
+*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([上一步](#TitleNum_7) | [下一步](#TitleNum_9))
 
 <!-- Source markdown line 25.  ms.author= mikeray.  -->
 
@@ -458,24 +458,24 @@ docker rm sql1
 > [!div class="checklist"]
 > * 安裝及設定 Linux
 > * 安裝及設定 SQL Server
-> * 設定主機檔案。
-> * 設定共用存放裝置，並移動資料庫檔案
-> * 安裝和設定每個叢集節點上 Pacemaker
+> * 設定 host 檔案
+> * 設定共用儲存裝置並移動資料庫檔案
+> * 在每個叢集節點上設定和安裝 Pacemaker
 > * 設定容錯移轉叢集執行個體
 
-本文說明如何建立 SQL Server 共用的磁碟的雙節點容錯移轉叢集執行個體 (FCI)。 本文包括指示和範例指令碼 Red Hat Enterprise Linux (RHEL)。 Ubuntu 分佈是 RHEL 類似，因此指令碼範例將通常 Ubuntu 上也能運作。
+本文說明如何建立 SQL Server 共用磁碟的雙節點容錯移轉叢集執行個體 (FCI)。 本文包括指示和範例指令碼 Red Hat Enterprise Linux (RHEL)。 Ubuntu 分佈是 RHEL 類似，因此指令碼範例將通常 Ubuntu 上也能運作。
 
 概念性資訊，請參閱 [SQL Server 容錯移轉叢集執行個體 (FCI) 上 Linux--sql-server-linux-shared-disk-cluster-concepts.md)。
 
 **必要條件**
 
 
-若要完成以下的端對端案例中，您需要將兩個節點叢集和儲存體的另一部伺服器部署的兩部電腦。 下列步驟概述這些伺服器設定的方式。
+若要完成以下的端對端案例中，您需要將兩部電腦部署叢集節點和另一部伺服器部署儲存體。 下列步驟概述這些伺服器設定的方式。
 
 **安裝及設定 Linux**
 
 
-第一個步驟是設定叢集節點上的作業系統。 在叢集中每個節點，設定 linux 散發套件。 兩個節點上使用相同的通訊群組和版本。 使用一或其他的下列發佈：
+第一個步驟是設定叢集節點上的作業系統。 在叢集中每個節點，設定 linux 散發套件。 兩個節點上使用相同的散發套件和版本。 使用以下任一散發套件：
 
 * RHEL HA 附加元件的有效訂用帳戶
 
@@ -483,7 +483,7 @@ docker rm sql1
 
 
 1. 安裝和設定兩個節點上的 SQL Server。  如需詳細指示，請參閱 [安裝 SQL Server on Linux-sql server-linux setup.md)。
-1. 將一個節點指定為主要伺服器與另一個則為次要，基於的組態。 使用下列這些詞彙本指南。
+1. 基於組態將一個節點指定為主要伺服器與另一個則為次要。 使用下列這些詞彙本指南。
 1. 在次要節點，停止並停用 SQL Server。
     下列範例會停止，並停用 SQL Server:
 ```
