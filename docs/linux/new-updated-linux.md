@@ -333,9 +333,9 @@ docker rm sql1
 
 <a name="TitleNum_6"/>
 
-### <a name="6-nbsp-create-and-run-sql-server-agent-jobs-on-linuxsql-server-linux-run-sql-server-agent-jobmd"></a>6.&nbsp;[建立和執行在 Linux 上的 SQL Server Agent 作業](sql-server-linux-run-sql-server-agent-job.md)
+### <a name="6-nbsp-create-and-run-sql-server-agent-jobs-on-linuxsql-server-linux-run-sql-server-agent-jobmd"></a>6.&nbsp;[在 Linux 上執行 SQL Server Agent 並建立和執行作業](sql-server-linux-run-sql-server-agent-job.md)
 
-*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([先前](#TitleNum_5) | [下一步](#TitleNum_7))
+*更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([上一步](#TitleNum_5) | [下一步](#TitleNum_7))
 
 <!-- Source markdown line 35.  ms.author= jroth.  -->
 
@@ -351,15 +351,15 @@ docker rm sql1
 * Linux 機器會有下列先決條件：
   * SQL Server 2017 ([RHEL--quickstart-install-connect-red-hat.md)，[SLES-快速入門-安裝-連線-suse.md)，或 [Ubuntu-快速入門-安裝-連線-ubuntu.md)) 的命令列工具。
 
-下列必要條件為選擇性：
+下列先決條件為選擇性：
 
-* 使用 SSMS 的 Windows 電腦：
+* 使用 Windows 電腦上的 SSMS ：
   * [SQL Server Management Studio](https://docs.microsoft.com/sql/ssms/download-sql-server-management-studio-ssms)選擇性 SSMS 步驟。
 
 **安裝 SQL Server Agent**
 
 
-若要在 Linux 上使用 SQL Server 代理程式，您必須先安裝**mssql server agent**已安裝的 SQL Server 2017 機器上的封裝。
+若要在 Linux 上使用 SQL Server Agent，您必須在已安裝的 SQL Server 2017 機器安裝**mssql-server-agent**。
 
 1. 安裝**mssql server agent**與 Linux 作業系統的適當命令。
 
