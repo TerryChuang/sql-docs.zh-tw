@@ -1,5 +1,5 @@
 ---
-title: "已更新-SQL Server on Linux 的文件 |Microsoft 文件"
+title: "已更新-在 Linux 上執行 SQL Server 文件 |Microsoft 文件"
 description: "顯示更新的內容，如需 Microsoft SQL Server on Linux 的最近變更過的文件的程式碼片段。"
 services: na
 documentationcenter: 
@@ -21,13 +21,13 @@ ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/04/2017
 ---
-# <a name="new-and-recently-updated-sql-server-on-linux-docs"></a>新的與最近的更新： SQL Server on Linux 的文件
+# <a name="new-and-recently-updated-sql-server-on-linux-docs"></a>全新與近期更新： 在 Linux 上執行 SQL Server 的文件
 
 
 
-Microsoft 幾乎每天都會在其 [Docs.Microsoft.com](http://docs.microsoft.com/) 文件網站上更新一些現有文章。 本文會顯示最近更新文章的摘錄。 可能也會列出新文章的連結。
+Microsoft 幾乎每天都會在 [Docs.Microsoft.com](http://docs.microsoft.com/) 文件網站上更新一些現有文章。 本文會顯示最近更新文章的摘錄。 可能也會列出新文章的連結。
 
-本文是透過定期重新執行的程式所產生。 摘錄中偶爾會出現示不完整的格式，或顯示為來自來源文章的 Markdown。 影像永遠不會顯示在這裡。
+本文是透過定期重新執行的程式所產生。 摘錄中偶爾會出現示不完整的格式，或顯示為來自來源文章的 Markdown。 圖片永遠不會顯示在這裡。
 
 新的更新會報告下列日期範圍和主旨：
 
