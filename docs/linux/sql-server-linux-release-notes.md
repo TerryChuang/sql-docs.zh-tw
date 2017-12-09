@@ -291,7 +291,7 @@ ms.lasthandoff: 12/01/2017
 
 若要開始，請參閱下列快速入門教學課程：
 
-- [Red Hat Enterprise Linux 上安裝](quickstart-install-connect-red-hat.md)
-- [SUSE Linux Enterprise Server 上安裝](quickstart-install-connect-suse.md)
+- [在 Red Hat Enterprise Linux 上安裝](quickstart-install-connect-red-hat.md)
+- [在 SUSE Linux Enterprise Server 上安裝](quickstart-install-connect-suse.md)
 - [在 Ubuntu 上安裝](quickstart-install-connect-ubuntu.md)
-- [執行 docker](quickstart-install-connect-ubuntu.md)
+- [在 docker 執行](quickstart-install-connect-ubuntu.md)
