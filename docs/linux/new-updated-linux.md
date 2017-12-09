@@ -81,13 +81,13 @@ Microsoft 幾乎每天都會在其 [Docs.Microsoft.com](http://docs.microsoft.co
 
 此壓縮清單提供＜摘要＞一節中所有更新文章的連結。
 
-1. [執行 SQL Server 2017 容器映像使用 Docker](#TitleNum_1)
-2. [設定 Alwayson 可用性群組的 SQL Server on Linux](#TitleNum_2)
+1. [使用 Docker 執行 SQL Server 2017 容器映像](#TitleNum_1)
+2. [在 Linux 上執行 SQL Server 設定 Alwayson 可用性群組](#TitleNum_2)
 3. [可用性群組組態的高可用性與資料保護](#TitleNum_3)
-4. [設定 SQL Server 2017 容器映像 docker](#TitleNum_4)
-5. [加密連接到 SQL Server on Linux](#TitleNum_5)
+4. [在 Docker 設定 SQL Server 2017 容器映像](#TitleNum_4)
+5. [在 Linux 上執行 SQL Server 加密連接](#TitleNum_5)
 6. [建立和執行在 Linux 上的 SQL Server Agent 作業](#TitleNum_6)
-7. [SQL Server on Linux 的安裝指南](#TitleNum_7)
+7. [SQL Server on Linux 安裝指南](#TitleNum_7)
 8. [設定容錯移轉叢集執行個體的 SQL Server 上 Linux (RHEL)](#TitleNum_8)
 9. [疑難排解 SQL Server on Linux](#TitleNum_9)
 
@@ -100,7 +100,7 @@ Microsoft 幾乎每天都會在其 [Docs.Microsoft.com](http://docs.microsoft.co
 
 <a name="TitleNum_1"/>
 
-### <a name="1-nbsp-run-the-sql-server-2017-container-image-with-dockerquickstart-install-connect-dockermd"></a>1.&nbsp;[執行 SQL Server 2017 容器映像使用 Docker](quickstart-install-connect-docker.md)
+### <a name="1-nbsp-run-the-sql-server-2017-container-image-with-dockerquickstart-install-connect-dockermd"></a>1.&nbsp;[在 Docker 執行 SQL Server 2017 容器映像](quickstart-install-connect-docker.md)
 
 *更新日期︰ 2017年-11-30* &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ([下一步](#TitleNum_2))
 
