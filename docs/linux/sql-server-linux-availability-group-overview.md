@@ -34,9 +34,9 @@ ms.lasthandoff: 05/19/2018
 
 ## <a name="number-of-replicas-and-cluster-nodes"></a>複本與叢集節點數目
 
-中的 AG[!INCLUDE[ssstandard-md](../includes/ssstandard-md.md)]可以有兩個的總計複本： 一個主要和一個次要資料庫僅為了提供可用性而使用。 它不能用於其他用途，例如可讀取的查詢。 中的 AG[!INCLUDE[ssenterprise-md](../includes/ssenterprise-md.md)]可以有最多 9 個的總計複本： 一個主要和最多八個次要資料庫，其中多達三 （包括主要） 可以是同步。 如果使用基礎叢集，可以有最多 16 個節點的總當 Corosync 涉及。 可用性群組可以跨越九個最多 16 個節點與[!INCLUDE[ssenterprise-md](../includes/ssenterprise-md.md)]，和與兩個[!INCLUDE[ssstandard-md](../includes/ssstandard-md.md)]。
+AG[!INCLUDE[ssstandard-md](../includes/ssstandard-md.md)]可以有兩個的總計複本： 一個主要和一個僅為了提供可用性而使用的次要資料庫。 它不能用於其他用途，例如可讀取的查詢。 AG[!INCLUDE[ssenterprise-md](../includes/ssenterprise-md.md)]可以有最多 9 個的總計複本： 一個主要和最多八個次要資料庫，其中多達三個同步複本 （包括主要）。 如果基於叢集，可以有最多 16 個節點的總當 Corosync 涉及。 可用性群組可以跨越九個最多 16 個節點與[!INCLUDE[ssenterprise-md](../includes/ssenterprise-md.md)]，和與兩個[!INCLUDE[ssstandard-md](../includes/ssstandard-md.md)]。
 
-中所述，需要能夠自動容錯移轉至另一個複本的兩個複本設定需要設定專用的複本，使用[設定唯讀複本和仲裁](#configuration-only-replica-and-quorum)。 設定複本中導入了[!INCLUDE[sssql17-md](../includes/sssql17-md.md)]累計更新 1 (CU1)，因此，應該是部署此組態的最小版本。
+需要能夠自動容錯移轉至另一個複本的兩個複本設定需要設定專用的複本，使用[設定唯讀複本和仲裁](#configuration-only-replica-and-quorum)。 設定複本中導入了[!INCLUDE[sssql17-md](../includes/sssql17-md.md)]累計更新 1 (CU1)，因此，應該是部署此組態的最小版本。
 
 如果使用 Pacemaker 時，它必須正確設定讓它保持啟動且正在執行。 這表示，仲裁及 STONITH 必須正確地實作 Pacemaker 的觀點而言，除了任何[!INCLUDE[ssnoversion-md](../includes/ssnoversion-md.md)]需求，例如設定唯讀複本。
 
