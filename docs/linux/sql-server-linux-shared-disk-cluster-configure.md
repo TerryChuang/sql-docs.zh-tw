@@ -36,7 +36,7 @@ SQL Server 共用的磁碟的雙節點容錯移轉叢集執行個體提供高可
 
 概念性資訊，請參閱[SQL Server 容錯移轉叢集執行個體 (FCI) 在 Linux 上](sql-server-linux-shared-disk-cluster-concepts.md)。
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>先決條件
 
 若要完成下列端對端案例中，您需要將兩個節點叢集和儲存體的另一部伺服器部署的兩部電腦。 下列步驟概述這些伺服器設定的方式。
 
