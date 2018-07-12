@@ -38,7 +38,7 @@ Kubernetes 1.6 和更新版本可支援[儲存類別](http://kubernetes.io/docs/
 
 ![Kubernetes SQL Server 叢集的圖表](media/tutorial-sql-server-containers-kubernetes/kubernetes-sql.png)
 
-在上圖中，`mssql-server`是中的容器[pod](http://kubernetes.io/docs/concepts/workloads/pods/pod/)。 Kubernetes 會協調叢集中的資源。 A[複本集](http://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)可確保在節點失敗之後會自動復原 pod。 應用程式連接至服務。 在此情況下，服務會代表裝載失敗後保持相同的 IP 位址的負載平衡器`mssql-server`。
+在上圖中，`mssql-server`是[pod](http://kubernetes.io/docs/concepts/workloads/pods/pod/)中的容器。 Kubernetes 會協調叢集中的資源。 [複本集](http://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)可確保在節點失敗之後會自動復原 pod。 應用程式連接至服務。 在此情況下，服務會在失敗後透過負載平衡器`mssql-server`保持相同的 IP 位址。
 
 在下列圖表中，`mssql-server`容器失敗。 為 orchestrator Kubernetes 保證狀況良好的執行個體複本的正確計數設定，並啟動新的容器，根據組態。 Orchestrator 的相同節點上，啟動新的 pod 和`mssql-server`重新連線到相同的永續性儲存體。 此服務會連接到重新建立`mssql-server`。
 
@@ -48,7 +48,7 @@ Kubernetes 1.6 和更新版本可支援[儲存類別](http://kubernetes.io/docs/
 
 ![Kubernetes SQL Server 叢集的圖表](media/tutorial-sql-server-containers-kubernetes/kubernetes-sql-after-node-fail.png)
 
-## <a name="prerequisites"></a>필수 구성 요소
+## <a name="prerequisites"></a>先決條件
 
 * **Kubernetes 叢集**
    - 此教學課程需要 Kubernetes 叢集。 這些步驟使用[kubectl](https://kubernetes.io/docs/user-guide/kubectl/)來管理叢集。 
